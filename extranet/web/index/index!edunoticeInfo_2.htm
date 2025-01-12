@@ -1,0 +1,337 @@
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+	
+
+
+
+
+
+
+ 
+
+
+
+
+
+<meta charset="UTF-8">
+<title>上海市闵行区教育学院</title>
+<link rel="apple-touch-icon-precomposed" sizes="32x32" href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<link rel="shortcut icon" href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/mainpicture/ico_jyxy.ico">
+<script src="https://jyxy.mhedu.sh.cn/static/vue/jquery-3.6.0.min.js"></script><script type="text/javascript" src="https://jyxy.mhedu.sh.cn/static/vue/jquery-migrate.min.js"></script>
+<script src="https://jyxy.mhedu.sh.cn/static/js/jquery.SuperSlide.js?V1.0"></script>
+<script src="https://jyxy.mhedu.sh.cn/static/js/layer/layer.js"></script>
+<script src="https://jyxy.mhedu.sh.cn/static/js/idealdcp/utils/Utils.js"></script>
+<script type="text/javascript" src="https://jyxy.mhedu.sh.cn/static/js/ueditor/ueditor.parse.js"></script>
+<script type="text/javascript" src="https://jyxy.mhedu.sh.cn/static/js/jquery-qrcode-master/jquery.qrcode.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://jyxy.mhedu.sh.cn/static/extranet/mhedu/index/css/style.css?V=1.0">
+	<style type="text/css">
+		table td p{
+			text-indent: 0em !important;
+		}
+		table td{
+			border: 1px solid;
+		}
+	</style>
+</head>
+<body>
+	
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<style type="text/css">
+#qrcodediv img{
+    margin: 30px auto;
+}
+</style>   
+
+<div id="header">
+	<div id="topbar">
+		<div class="topbarcon cl" style="">
+			<div class="topsearch"><input id="searchDiv" type="text" placeholder="输入关键字搜索..." class="stxt"><input type="button" value="搜索" class="sbtn"></div>
+			<div class="toprlink">
+				<span class="locat">上海市闵行区紫龙路835号</span>
+				<a href="javascript:;" class="loginlink" id="wxqrcodebtn">移动版</a>
+                <a href="https://jyxy.mhedu.sh.cn/extranet/web/index/index!login.action" target="_blank" class="loginlink">用户登录</a>
+			</div>
+		</div>
+	</div>
+	<div id="top" class="cl">
+        <div id="logo" style="width:235px;"><img src="https://jyxy.mhedu.sh.cn/static/extranet/mhedu/index/images/logo.png" height="66" width="193" alt="">
+        </div>
+		<ul class="menu">
+			<li class="home current"><a target="_blank" href="https://jyxy.mhedu.sh.cn/extranet/web/index/index.action"  >首页</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_XXGK" href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/xx.action" >信息公开</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_DWGK" href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/dw.action" >党务公开</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_HXXY" href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/hx.action" >文明单位</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_ZHJY" href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/zh.action" >智慧教育</a></li>
+            
+			<li><a target="_blank" class="morelist" code="JYXY_SY_XYDT" >学院动态</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_ZHYJ">综合研究</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_YXDT">教研动态</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_JSPX">教师培训</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_GBPX">干部培训</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_DYYJ">德育研究</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_XLJK"
+                   href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/xl.action">心理健康</a></li>
+            <li><a target="_blank" class="morelist" code="JYXY_SY_ZHYJ_JYKY">教育科研</a></li>
+			<li><a target="_blank" class="morelist" code="JYXY_SY_JYJS">教育技术</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>
+	var codes=[];
+	$(".morelist").each(function(){
+		codes.push($(this).attr("code"));
+	});
+	$(".morelist").click(function(){
+        if(!this.href)
+        window.open('/extranet/web/index/index!more.action?catalogCode='+$(this).attr("code"));
+	});
+	$(".sbtn").click(function(){
+        Utils.formBuilder.submitByForm({search:$('#searchDiv').val()}, '/extranet/web/index/index!search.action');
+    });
+
+	$.ajax({
+		url:"/extranet/web/index/index!codes.action",
+		type:'post',
+		data:{codes:codes.join(",")},
+		success:function(data){
+			$(".morelist").each(function(){
+				if(''.indexOf(data.data[$(this).attr("code")])>-1){
+					$("#top .current").removeClass("current");
+					$(this).parent().addClass("current");
+				}
+			});
+
+		},
+		error:function(){
+
+		}
+	});
+</script>
+
+	<div id="combox">
+		<div class="comcon cl">
+			<div class="noticebox">
+				<div class="location">
+                    <a href="https://jyxy.mhedu.sh.cn/extranet/web/index/index!list.action" class="home"></a> <em>&gt;</em> <a href="https://jyxy.mhedu.sh.cn/extranet/web/index/index!edunotice.action">通知</a>
+				</div>
+				<div class="article">
+					<h1>转发全国教育科学“十三五”规划2019年度课题申报通知</h1>
+					<div class="artinfo">
+						发布时间: 2019-02-15
+					</div>
+					<div class="artcon">
+						<p style="margin-top:3px;margin-right:0;margin-bottom:3px;margin-left:&#10;line-height:150%"><span style=";color: black">各中小学、幼儿园、直属单位、职业学校：</span></p><p style="margin-top:3px;margin-right:0;margin-bottom:3px;margin-left:&#10;line-height:150%"><span style=";color: black">全国教育科学</span><span style=";color: black;font-family: ">“</span><span style=";color: black">十三五</span><span style=";color: black;font-family: ">”</span><span style=";color: black">规划</span><span style=";color: black;font-family: ">2019</span><span style=";color: black">年度课题申报已启动，现将相关通知转发各单位（具体见附件</span><span style=";color: black;font-family: ">1</span><span style=";color: black">）。根据上海市教育科学规划领导小组办公室相关通知要求（具体见附件</span><span style=";color: black;font-family: ">2</span><span style=";color: black">），对闵行区</span><span style=";color: black;font-family: ">2019</span><span style=";color: black">年度国家课题申报工作特作如下通知：</span></p><p style="margin-top:3px;margin-right:0;margin-bottom:3px;margin-left:&#10;line-height:150%;orphans: 2;-webkit-text-stroke-width: 0px;word-spacing:&amp;#10">1<span style=";color: black;font-family: "><strong>. </strong></span><strong><span style=";color: black">课题选题和设计</span></strong><span style=";color: black">：认真阅读相关文件精神，根据全国教育发展趋势，立足当前区校教育实际，精心选题，规范设计。已被闵行区教育局、上海市教委等批准立项的课题，不得重复申报。</span></p><p style="margin-top:3px;margin-right:0;margin-bottom:3px;margin-left:&#10;line-height:150%;orphans: 2;-webkit-text-stroke-width: 0px;word-spacing:&amp;#10"><span style=";color: black;font-family: "><strong>2. </strong></span><strong><span style=";color: black">区内评审和指导</span></strong><span style=";color: black">：本次申报为限额申报，请申报单位于</span><span style=";color: black;font-family: ">2019</span><span style=";color: black">年</span><span style=";color: black;font-family: ">3</span><span style=";color: black">月</span><span style=";color: black;font-family: ">1</span><span style=";color: black">日前将国家项目申请书（具体见附件</span><span style=";color: black;font-family: ">1</span><span style=";color: black">）的纸质稿（一式三份）上交至闵行区教育学院（紫龙路</span><span style=";color: black;font-family: ">835</span><span style=";color: black">号）</span><span style=";color: black;font-family: ">911</span><span style=";color: black">室，同时将电子稿以“</span><span style=";color: black;font-family: ">2019</span><span style=";color: black">国家项目</span><span style=";color: black;font-family: ">+</span><span style=";color: black">学校”为名发送至</span><span style=";color: black;font-family: ">yonghonghe1978@126.com</span><span style=";color: black">。区内组织专家对申报课题进行集中评审和指导。</span></p><p style="margin-top:3px;margin-right:0;margin-bottom:3px;margin-left:&#10;text-indent:32px;line-height:150%"><strong><span style=";color: black;font-family: ">3. </span></strong><strong><span style=";color: black">材料打印和上交</span></strong><span style=";color: black">：请获准申报单位按照相关要求（具体见附件</span><span style=";color: black;font-family: ">1</span><span style=";color: black">），于</span><span style=";color: black;font-family: ">2019</span><span style=";color: black">年</span><span style=";color: black;font-family: ">3</span><span style=";color: black">月</span><span style=";color: black;font-family: ">11</span><span style=";color: black">日将全套纸质材料和电子材料上交至闵行区教育学院科研室。</span></p><p style="margin-top:3px;margin-right:0;margin-bottom:3px;margin-left:&#10;text-indent:32px;line-height:150%"><strong><span style=";color: black;font-family: ">4.</span></strong><strong><span style=";color: black">申报工作联系人</span></strong><span style=";color: black">：何老师（</span><span style=";font-family: ">34728865-88911</span><span style=";color: black">）或各学段科研员（</span><span style=";font-family: ">34728865-80909/80908</span><span style=";color: black">）。</span></p><p style="margin-top:3px;margin-right:0;margin-bottom:3px;margin-left:&#10;text-indent:32px;line-height:150%"><span style=";color: black;font-family: ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span style=";color: black">闵行区教育学院科研室</span></p><p><span style=";color: black;font-family: ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 2019</span><span style=";color: black;font-family: 宋体;font-size: 14px">年</span><span style=";color: black;font-family: ">2</span><span style=";color: black;font-family: 宋体;font-size: 14px">月</span><span style=";color: black;font-family: ">15</span><span style=";color: black;font-family: 宋体;font-size: 14px">日</span></p><p><br/></p>
+					</div>
+					
+						<div class="filebox">
+							<h6>附件：（点击下载）</h6>
+							
+								<p><a href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYTZ/allArea/main/2019/02/8a9c1a006116662901611c6f22200726/8f137badcedd4b40b263a9467fc8bc79.zip?title=%E9%99%84%E4%BB%B61%EF%BC%9A%E5%85%A8%E8%A7%84%E5%8A%9E-2019%E5%85%A8%E5%9B%BD%E8%AF%BE%E7%A8%8B%E7%94%B3%E6%8A%A5%E6%9D%90%E6%96%99%E6%B1%87%E6%80%BB.zip" download="附件1：全规办-2019全国课程申报材料汇总.zip">1、<span style="color: #359bd7;">附件1：全规办-2019全国课程申报材料汇总.zip</span></a></p>
+							
+								<p><a href="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/8a9c1a005cce76e5015cd2e970790651/app/XYTZ/allArea/main/2019/02/8a9c1a006116662901611c6f22200726/04d13c5d4c8e4d77988dbc7fc434c35f.pdf?title=%E9%99%84%E4%BB%B62%EF%BC%9A%E5%B8%82%E8%A7%84%E5%88%92%E5%8A%9E-2019%E5%85%A8%E5%9B%BD%E8%AF%BE%E9%A2%98%E7%94%B3%E6%8A%A5%E9%80%9A%E7%9F%A5.pdf" download="附件2：市规划办-2019全国课题申报通知.pdf">2、<span style="color: #359bd7;">附件2：市规划办-2019全国课题申报通知.pdf</span></a></p>
+							
+							
+						</div>
+					
+					<div class="artpre">
+                        <span class="goback"><a href="https://jyxy.mhedu.sh.cn/extranet/web/index/index!edunotice.action?weekno=1">返回列表</a></span>
+						<p>上一篇： <a href="https://jyxy.mhedu.sh.cn/extranet/web/index/index!edunoticeInfo.action?id=ff80808190d416b30191b22b4ad70844&amp;yearId=&amp;weekno=1">中学劳动学科新学期教研活动</a> </p>
+						<p>下一篇：无  </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+<div id="footer">
+	<div class="ft cl">
+		<div  class="blogo">
+            <span id="_ideConac" class="" style="margin-top: 5px;">
+            <a href="http://bszs.conac.cn/sitename?method=show&amp;id=2907016072AE5269E053012819ACF339" target="_blank">
+                <img id="imgConac" vspace="0" hspace="0" border="0" src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/image/blue.png"
+                     data-bd-imgshare-binded="1">
+            </a>
+        </span>
+        </div>
+        <div  class="blogo">
+            <div style="padding: 3px;background-color: white;width: 56px;margin: auto;">
+                <span class="" id="footerwxqrcodebtn" ></span>
+            </div>
+            <span>移动版二维码</span>
+        </div>
+        <div  class="blogo">
+            <div class="" id="qyFrcode" style="margin-right:10px;display: block;">
+                <img src="https://jyxyfiles.mhedu.sh.cn/ftpfiles/dcpfiles/introduction/2205021687154906a1763079ccc40a84.jpg" style="width: 61px;height: 62px;">
+            </div>
+            <span>闵行区教育学院服务号</span>
+        </div>
+
+        <div class="bnav">
+            <a href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/xx!oriented.action?catalogCode=JYXY_XXGK_LXWM">联系我们</a>
+            |
+            <a href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/xx!oriented.action?catalogCode=JYXY_XXGK_BQSM">版权声明</a>
+            |
+            <a href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/xx!LeavingMessare.action">我要留言</a>
+            |
+            <a target="_blank" href="http://10.107.58.146">旧网链接（内网）</a></div>
+		<div class="copyright">
+            <p>版权所有 上海市闵行区教育学院 （工信部备案号:沪ICP备05012047号）
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202005311"
+                   style="text-decoration:none;height:20px;line-height:20px;">
+                    <img src="https://jyxy.mhedu.sh.cn/static/extranet/mhedu/index/images/pilice.png"/>
+                    <span style="height:20px;line-height:20px;color:#fff;">沪公网安备 31011202005311号</span>
+                </a>
+            </p>
+
+            <p>地址：上海市闵行区紫龙路835号 邮编：200241 电话：021-34728865</p>
+
+            <p>本站推荐使用Chrome访问</p>
+        </div>
+	</div>
+</div>
+
+<script  src="https://jyxy.mhedu.sh.cn/static/js/qrcode.min.js"></script>
+<script src="https://jyxy.mhedu.sh.cn/static/js/layer3/layer/layer.js"></script>
+<script>
+
+	var _qrcodeUrl=location.href.split('/extranet')[0]+'/extranet/web/index/index.action';
+
+	var qrcode = new QRCode("footerwxqrcodebtn", {
+	    text: _qrcodeUrl,
+	    width: 56,
+	    height: 56,
+	    colorDark : "#000000",
+	    colorLight : "#ffffff",
+	    correctLevel : QRCode.CorrectLevel.L
+	});
+
+    $("#wxqrcodebtn").click(function(){
+        layer.open({
+            type: 1,
+            title :'移动版扫码进入',
+            skin: 'layui-layer-demo', //样式类名
+            closeBtn: 1, //不显示关闭按钮
+            anim: 2,
+            area :['500px','500px'],
+            shadeClose: true, //开启遮罩关闭
+            content: '<div id="qrcodediv"></div>',
+            success:function(){
+                var qrcode = new QRCode("qrcodediv", {
+                    text: _qrcodeUrl,
+                    width: 360,
+                    height: 360,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+
+
+            }
+
+
+        });
+    });
+
+    $("#footerwxqrcodebtn").click(function(){
+        layer.open({
+            type: 1,
+            title :'移动版扫码进入',
+            skin: 'layui-layer-demo', //样式类名
+            closeBtn: 1, //不显示关闭按钮
+            anim: 2,
+            area :['500px','500px'],
+            shadeClose: true, //开启遮罩关闭
+            content: '<div id="qrcodediv"></div>',
+            success:function(){
+                var qrcode = new QRCode("qrcodediv", {
+                    text: _qrcodeUrl,
+                    width: 360,
+                    height: 360,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+
+
+            }
+
+
+        });
+    });
+
+	$("#qyFrcode").click(function(){
+		layer.open({
+			  type: 1,
+			  title :'服务号扫码关注',
+			  skin: 'layui-layer-demo', //样式类名
+			  closeBtn: 1, //不显示关闭按钮
+			  anim: 2,
+			  area :['500px','500px'],
+			  shadeClose: true, //开启遮罩关闭
+			  content: '<div id="qrcodediv"></div>',
+			  success:function(){
+				  $('#qrcodediv').html('<img src="https://jyxy.mhedu.sh.cn/extranet/web/index/'+$('#qyFrcode img').attr('src')+'" style="display:block;;width:360px;height:360px;" />');
+				  
+			  }
+
+		  
+		});
+	});
+
+</script>
+</body>
+
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+  	<script src="https://jyxy.mhedu.sh.cn/static/themes/cameo1.0/js/ideal-wx-share.js?v1.1"></script>
+<script type="text/javascript">
+    function goBack(){
+    	history.back(-1);
+    }
+    uParse('.artcon', {
+        rootPath: '../'
+    });
+    _wxshare({title:'转发全国教育科学“十三五”规划2019年度课题申报通知',link:location.href,imgUrl:'http://'+location.host+'/static/school/images/jyxylogo.png',desc:'',ctx:''});
+</script>
+</html>

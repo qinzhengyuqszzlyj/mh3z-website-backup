@@ -1,0 +1,668 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>查询</title>
+<style>.hidden{display:none;}</style>
+<link type="text/css" rel="stylesheet" href="https://www.mhedu.sh.cn/styles/qzbh.css" />
+        <link rel="stylesheet" type="text/css" href="https://www.mhedu.sh.cn/wcm.files/styles/group.css" />
+        <link rel="stylesheet" type="text/css" href="https://www.mhedu.sh.cn/styles/site.css" />
+        <link rel="stylesheet" type="text/css" href="https://www.mhedu.sh.cn/xwpt/content/css/contentPage.css"/>
+<script language="javascript" type="text/javascript" src="https://www.mhedu.sh.cn/wcm.files/js/jqueryN.js"></script>
+<style>
+th{height:35px;}
+.rsTable{width: 600px; border-left: 1px solid #DCDCDC; border-top: 1px solid #DCDCDC;}
+.rsTable th,.rsTable td{border-right: 1px solid #DCDCDC; border-bottom: 1px solid #DCDCDC; padding: 0px 6px; line-height: 35px;}
+.rsTable th{width: 120px; font-weight: bold;}
+</style>
+</head>
+<body>
+<!-- ---- 首页>>--【导航条】 -- 标签开始 ---- -->
+<script type="text/javascript" src="https://www.mhedu.sh.cn/wcm.files/js/jqueryN.js"></script>
+<script type="text/javascript">
+  var w=screen.width;
+if(w<=1025)document.write('<link rel="stylesheet" type="text/css" href="https://www.mhedu.sh.cn/iphone/css/base_phone.css"/>');
+else if(w>1025)document.write('<link rel="stylesheet" type="text/css" href="https://www.mhedu.sh.cn/newmhjy/css/base.css"/>');
+ 
+  </script>
+
+<script type="text/javascript">
+  $(function(){
+  $("#tags LI A").each(function(){
+     var text = $(this).text();
+    if(text == "特色课程"){
+      $(this).parent("li").hide(); 
+       }
+  })
+  
+  })
+   </script>
+
+<!--导航条开始  -->
+ <a href="https://www.mhedu.sh.cn/"><img src="https://www.mhedu.sh.cn/iphone/images/sj_logo.png" style="max-width:160px;" class="imgIhone"></a>
+ <div class="cl-effect-18" ><a href="https://www.mhedu.sh.cn/appeal/chengji.htm#"><div class="middlexian"></div></a></div>
+<div class="indexBannar_wrapper">
+  <div class="indexBannar">
+    <div class="index_logo mh_head">
+      <a href="https://www.mhedu.sh.cn/"><img src="https://www.mhedu.sh.cn/newmhjy/images/logo2.png" width="142" height="" class="imgPC"></a>   
+    </div>
+    <div class="indexBannar_1 sj_bannar">
+     
+      <ul class="nav">
+        <li><a href="https://www.mhedu.sh.cn/" class="indexBa01">首&nbsp;页</a></li>
+        <li><a target="_blank" href="http://www.shmh.gov.cn/shmh/ggl-jyj/index.html" >通知公告</a><b><img src="https://www.mhedu.sh.cn/iphone/images/bu2.png"></b></li>
+        <li><a target="_blank" href="http://www.shmh.gov.cn/shmh/jyj/index.html" >教育新闻</a><b><img src="https://www.mhedu.sh.cn/iphone/images/bu2.png"></b></li>
+        <li><a target="_blank" href="https://zwgk.shmh.gov.cn/mh-xxgk-cms/website/mh_xxgk/xxgk_jyj/List/index.htm" >政务公开</a><b><img src="https://www.mhedu.sh.cn/iphone/images/bu2.png"></b></li>
+     
+       
+      </ul>
+    </div>
+    <div class="indexBannar_2">
+      <form id="searchform" name="searchform" action="https://www.mhedu.sh.cn/search/searchResultGJ.jsp" method="get"> 
+      <table width="200" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+      <td valign="top"><input id="q" name="q" type="text" class="search_Text" value="" style="width:161px;border:0px;background-color: transparent;outline:none;margin-left:10px;line-height:20px; " title="请输入关键字查询"  placeholder="请输入关键字查询" /> 　</td>
+      <td valign="top"> <input type="submit"  value=""   style="width:30px;background-color:transparent;  height:20px;border:0px;cursor:pointer;" />　</td>
+      </tr>
+      </tbody>
+      </table>   
+      <input type="hidden" value="264" name="t_id" >　 
+      <input type="hidden" value="" name="type" >
+      <input type="hidden" value="" name="categoryId" >
+      <input type="hidden" value="" name="site_id" >
+      </form>
+    </div>
+    <div class="indexBannar_3" style="background:none">
+      <a href="https://www.mhedu.sh.cn/appeal/chengji.htm#" id="StranLink" name="StranLink" class="inde_zw">中文简体</a>&nbsp;
+      <a id="translateLink" href="http://english.shmh.gov.cn/" target="_blank">English</a>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<!--导航条结束  -->
+<div class="clear bannarBlank" ></div>
+
+
+
+
+
+<!-- ---- 首页>>--【导航条】 -- 标签结束 ---- -->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="background:url(/xwpt/content/images/xinjian.jpg) no-repeat top center; margin-top:-2px;">
+  <tr>
+    <td>
+<div id="xinjian" style="height:46px;">
+  <table width="1000" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td>
+  <div id="xinwentou" class="Xinwentou">
+      <p style="width:462px; height:31px;  margin-left: 0px; margin-top:4px; font-size:22px; color:#087dcc; display:inline; float:left"></p>
+      </div>
+      <div id="dangqian" class="Dangqian">
+     
+      <p style="width:550px; height:18px; line-height:16px; margin-left: 5px; margin-top:5px; display:inline; float:left">
+           当前位置：<a href="https://www.mhedu.sh.cn/index.htm" style="color:#087dcc;">首页</a> ->
+    <a href="http://test.mhedu.sh.cn/jyzl.htm" style="color:#087dcc;">教育专栏</a> ->
+    <a  style="color:#087dcc;">中考查询</a>
+              
+        </p>
+      </div>
+</td>
+  </tr>
+</table>
+        </div></td></tr></table>
+        <!--中间-->
+ <table width="989" border="0" cellspacing="0" cellpadding="0"  align="center" height="250">
+  <tr>
+    <td>
+<div class="Neirong" style="margin-left:0px;">
+
+<div id="fromDiv" style="width:500px;margin:auto;font-size:14px;color:#585858;">
+	<form id="form1" method="post" action="https://www.mhedu.sh.cn/appeal/submit_cj.jsp" target="submitFrame">
+	<input type="hidden"  name="action" id ="action" value="gosubmit"/>
+	<table border="0" class="login_tabl">
+		<tr>
+	       <td colspan="2"  style="height:30px;"></td>
+	    </tr>
+	    <tr>
+	       <td colspan="2" algin="center" id="result" style="font-size:14px;text-algin:center;font-weight:bold;">2024年初中学业水平考试投档去向查询</td>
+	    </tr>
+	    <font color="red"></font>
+	    <tr>
+	       <th>报考号：</th>
+	       <td><input type="text" id="bmh" name="bmh" value="" class="login_input"/></td>
+	    </tr>
+	    <tr>
+	       <th>出生日期：</th>
+	       <td><input type="text" id="csrq" name="csrq" value="" class="login_input"/></td>
+	    </tr>
+	    <tr>
+		<th>验证码：</th>
+			<td>
+				<input id="auth_code" name="auth_code" type="text" class="loginInput" style="width:52px;" maxlength="6" value="" />
+				<img id="img" width="60" height="24"  style="vertical-align:top;" src="https://www.mhedu.sh.cn/appeal/createImage.jsp" />
+				<a href="javascript:changeCreateImage()">看不清，换一个</a>
+			</td>
+		</tr>
+	    <tr>
+	       <td colspan="2" style="height:15px;"></td>
+	    </tr>
+	    <tr>
+	      <td colspan="2">
+	      		<input type="button" value="确定"  class="login_btn" onclick="check()"/>
+	     	    <input type="button" value="取消"  onclick="javascript:window.close()" class="login_btn"/>
+	      </td>
+	    </tr>
+	</table>
+	</form>  
+</div>
+<iframe id="submitFrame" name="submitFrame" width="0" height="0" frameborder="0"></iframe>
+
+<div id="result_div" class="hidden" style="width:500px;margin:auto">
+     <style>
+table.spks{border-collapse:collapse;max-width:675px;}
+table.spks tr td{padding:5px 0;text-align:center;min-width:124px;line-height: 22px;font-size: 12px;}
+</style>
+<table width="100%" border="1" cellspacing="0" cellpadding="0" class="spks">
+  <tr>
+    <td colspan="4" style="font-size:14px;">
+   2024年初中学业水平考试投档去向查询
+    </td>
+  </tr>
+  <tr>
+    <td >姓名</td>
+    <td colspan="3" id="result_xm"></td>
+  </tr>
+  <tr>
+    <td >报考号</td>
+    <td colspan="3" id="result_bmh"></td>
+  </tr>
+  <tr>
+    <td>语文</td>
+    <td id="result_yuwen"></td>
+    <td>数学</td>
+    <td id="result_shuxue"></td>
+  </tr>
+  <tr>
+    <td>外语</td>
+    <td id="result_yingyu"></td>
+    <td>综合测试</td>
+    <td id="result_wuli"></td>
+  </tr>
+  <tr>
+    <td>（物理</td>
+    <td id="result_huaxue"></td>
+    <td>化学</td>
+    <td id="result_kxkal"></td>
+  </tr>
+  <tr>
+    <td>跨学科</td>
+    <td id="result_wlsy"></td>
+    <td>物理实验</td>
+    <td id="result_hxsy"></td>
+  </tr>
+  <tr>
+    <td>化学实验）</td>
+    <td id="result_lishi"></td>
+
+      <td>道德与法治</td>
+    <td id="result_tiyu"></td>
+  </tr>
+  <tr>
+  
+    <td>历史</td>
+    <td id="result_jiafen"></td>
+      <td>体育与健身</td>
+    <td id="result_zongfen"></td>
+  </tr>
+  <tr>
+   <td>附加分</td>
+    <td id="result_daode" colspan="3"></td>
+  
+  </tr>
+  <tr>
+    <td>总分</td>
+    <td colspan="3" id="result_tdqx"></td>
+  </tr>
+  <tr>
+    <td>投档去向</td>
+    <td colspan="3" id="result_shuoming"></td>
+  </tr>
+  <tr>
+    <td> 说明</td>
+    <td colspan="3" id="result_beizhu"></td>
+  </tr>
+</table>
+</div>
+<script type="text/javascript">
+var flag = true;
+function check()
+{
+	if($.trim($("#bmh").val())=="")
+	{
+		alert("报名号为空！");
+		$("#bmh").focus();
+		flag = false;
+		return;	
+	}
+	if($.trim($("#csrq").val())=="")
+	{
+		alert("出生日期不能为空！");
+		$("#csrq").focus();
+		flag = false;
+		return;	
+	}
+	
+	if($.trim($("#auth_code").val())=="")
+	{
+		alert("验证码不能为空！");
+		$("#auth_code").focus();
+		flag = false;
+		return;	
+	}
+	if(flag){
+		document.getElementById("form1").submit(); 
+	}
+}
+
+function changeCreateImage()
+{
+	$('#img').attr('src','createImage.jsp?'+Math.random());
+}
+</script>
+</div>
+</td>
+  </tr>
+</table>
+  <!--尾部-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0"  align="center" style="background:url(/xwpt/content/images/weilv.jpg) no-repeat top center">
+  <tr>
+    <td>
+    <div id="weilv" style="height:18px;">
+       <table width="1000" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td></td>
+    </tr>
+</table>
+    </div>
+</td>
+  </tr>
+</table>
+<!-- ---- 首页>>--【尾部】 -- 标签开始 ---- -->
+
+<style>
+.index_wzxx3 a:hover{color:#03c1c3;}
+  .tail_wrapper_bottom{
+    height:25px;
+    line-height:25px;
+  }
+</style>
+<!-- 尾部开始 -->
+<div class="tail_wrapper">
+<div class="tail_wrapper_inner" >
+  <div class="tail_wrapper_inner1">
+      <div class="clear" style="height:15px;"></div>
+    <div class="tail_wrapper_inner1_1 tail_title">
+      教育站群
+    </div>
+    <div class="tail_wrapper_inner1_2 taillist ">
+      <ul>
+        <li><a href="http://www.shmh.gov.cn/shmh/jyj/index.html " target="_blank" >教育新闻</a></li>
+        <li><a href="https://zwgk.shmh.gov.cn/mh-xxgk-cms/website/mh_xxgk/xxgk_jyj/List/index.htm " target="_blank" >政务公开</a></li>
+      <!-- 
+      
+        <li><a href="https://jyxy.mhedu.sh.cn/" target="_blank" >闵教研训</a></li>
+       
+        <li><a href="http://sjjd.mhedu.sh.cn/" target="_blank" class="yqlj">实践基地</a></li>
+        <li><a href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/xl.action" target="_blank">心理健康</a></li>
+        <div class="clear"></div>
+      </ul>
+    </div>
+  </div>
+   <div class="tail_wrapper_inner2">
+     <div class="clear" style="height:15px;"></div>
+    <div class="tail_wrapper_inner1_1 tail_wrapper_inner1_x tail_title">
+      应用系统
+    </div>
+    <div class="tail_wrapper_inner1_2 taillist taillist1">
+      <ul>
+       
+      
+      
+        <li><a href="http://jiaoshi.mhedu.sh.cn" target="_blank" class="yqlj">教师发展</a></li>
+       
+       
+        <li><a href="https://rczp.mhedu.sh.cn/" target="_blank">闵教招聘</a></li>
+      
+       
+       
+        <li><a href="http://ypk.ct-edu.com.cn"  target="_blank">云 录 播</a></li>
+         <div class="clear"></div>
+      </ul>
+    </div>
+
+  </div>
+  <div class="tail_wrapper_inner3">
+     <div class="clear" style="height:15px;"></div>
+     <div class="index_weixin">
+       <ul>
+         <li><a  class="gongzhong1"></a></li>
+         <li><a  class="gongzhong2"></a></li>
+         <li><a  class="gongzhong3"></a></li>
+         <li><a  class="gongzhong4"></a></li>
+         <li><a  class="gongzhong5"></a></li>
+         <!--<li><a  class="gongzhong6"></a></li>-->
+       </ul>
+     </div>
+     <div class="index_wzxx">
+       <div class="index_wzxx1">
+         <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='https://dcs.conac.cn/js/02/029/0000/60931949/CA020290000609319490004.js' type='text/javascript'%3E%3C/script%3E"));</script>
+        
+         
+       </div>
+       <div class="indexxWrap" >
+       <table width="280" border="0" cellspacing="0" cellpadding="0">
+         <!--<tr class="imgPC">
+           <td valign="top" width="30"><div class="index_wzxx2"><img src="http://dcs.conac.cn/image/red.png" width="22" style="margin-left:-4px;"></div></td>
+           <td valign="top" width="190"><div class="index_wzxx3">政府网站标识码3101120013</div></td>
+         </tr>-->
+         <tr>
+           <td valign="top" width="30"><div class="index_wzxx2"><img src="https://www.mhedu.sh.cn/newmhjy/images/mhjy_141.jpg" width="13" style="margin-top:3px;"></div></td>
+           <td valign="top" width="190"><div class="index_wzxx3"><a style="color:#ffffff;" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">沪ICP备05012047号-1</a></div></td>
+         </tr>
+         <tr>
+           <td valign="top">
+          
+             <div class="index_wzxx2"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202006672"><img src="https://www.mhedu.sh.cn/newmhjy/images/ghs.png" width="17" style="margin-left:-2px"></a></div></td>
+           <td valign="top"> <div class="index_wzxx3"><a style="color:#ffffff;" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202004973">沪公网安备31011202004973号</a></div></td>
+         </tr>
+         </table>
+
+       </div>
+      
+       <div class="clear"></div>
+     </div>
+      <div class="gongcont1"><img src="https://www.mhedu.sh.cn/newmhjy/images/wb.png" width="150"></div>
+      <div class="gongcont2"><img src="https://www.mhedu.sh.cn/newmhjy/images/wx.png" width="150"></div>
+      <div class="gongcont3"><img src="https://www.mhedu.sh.cn/newmhjy/images/xskj.png" width="150"></div>
+      <div class="gongcont4"><img src="https://www.mhedu.sh.cn/newmhjy/images/mdjy.png" width="150"></div>
+      <div class="gongcont5"><img src="https://www.mhedu.sh.cn/newmhjy/images/waxx.png" width="150"></div>
+     <!-- <div class="gongcont6"><img src="/newmhjy/images/jzxx.png" width="150"></div>-->
+
+  </div>
+  <div class="clear"></div>
+</div>
+</div>
+<div class="tail_wrapper_bottom" >
+  <div class="tail_bottom_inner">
+  <div class="tail_wrapper_bottom_1">版权所有：上海市闵行区教育局</div> 
+  <div class="tail_wrapper_bottom_2">技术服务：闵行区教育信息中心</div>
+  <div class="tail_wrapper_bottom_3"> 地址：闵行区七莘路400号    邮编：201199</div>
+    <div class="tail_wrapper_bottom_2">电话：54957616
+  <div class="clear"></div>
+ </div>
+</div>
+<!-- 尾部结束 -->
+
+<!----分众导航开始------->
+<style>
+ 
+.gzdh{width:68px;height:259px;background-color:#03c1c3; position: fixed;right: 0px;top:73px;z-index:800;display:none}
+  .gzdh1{width: 44px;height: 49px;background:url(/newmhjy/images/mhjy_133.jpg) 0px 0px no-repeat;margin:auto;margin-top: 20px;}
+.gzdh2{width: 100%;height: auto;margin: auto;}
+.gzdh2 ul li{font-size: 14px;height: 40px;line-height: 40px;}
+.gzdh2 ul li a{color:#077585;display: block;width: 100%;text-indent:28px;}
+.gzdh2 ul li a:hover{color:#ffffff;font-size:15px;}
+.gzdh2 ul li a.select3{color:#ffffff;font-size:15px;}
+.xs{background:url(/newmhjy/images/mhjy_125.jpg) 10px 15px  no-repeat;}
+.xs:hover{background:url(/newmhjy/images/mhjy_126.jpg) 10px 15px  no-repeat;}
+.js{background:url(/newmhjy/images/mhjy_127.jpg) 10px 15px  no-repeat;}
+.js:hover{background:url(/newmhjy/images/mhjy_128.jpg) 10px 15px  no-repeat;}
+.xx{background:url(/newmhjy/images/mhjy_129.jpg) 10px 15px  no-repeat;}
+.xx:hover{background:url(/newmhjy/images/mhjy_130.jpg) 10px 15px  no-repeat;}
+.gz{background:url(/newmhjy/images/mhjy_131.jpg) 10px 15px  no-repeat;}
+.gz:hover{background:url(/newmhjy/images/mhjy_132.jpg) 10px 15px  no-repeat;}
+.pdnr{ width: 380px;height: 257px;position: fixed;right:68px;top: 73px;z-index:800;background-color: #ffffff;border-top-left-radius: 15px;border-bottom-left-radius: 15px;display:none;border:1px solid #03c1c3;}
+.pdnr1{width: 330px;margin: auto;border-bottom: 1px solid #ddd;height: 45px;line-height: 60px; font-size: 16px;color: #333333;overflow: hidden;}
+.pdnr1 span{float: right;font-size: 12px;color: #077585;}
+.pdnr2{width: 330px;clear: both;margin-left: 44px;height: 176px;}
+.pdnr2 ul{float: left;width: 80px;}
+.pdnr2 ul li{height: 25px;line-height: 25px;}
+.pdnr2 ul li a:hover{color: #f17800}
+#pdnr_1,#pdnr_2,#pdnr_3,#pdnr_4{display: none;}
+</style>
+<div class="gzdh" >
+  <div class="gzdh1"></div>
+  <div class="gzdh2">
+    <ul>
+      <li><a class="xs">学生</a></li>
+      <li><a class="js">教师</a></li>
+      <li><a class="xx">学校</a></li>
+      <li><a class="gz">公众</a></li>
+    </ul>
+  </div>
+</div>
+<div class="pdnr"  id="pdnr_1">
+  <div class="pdnr1"><span>健康的孩子  闵行的未来</span>学生</div>
+  <div style="clear:both;"></div>
+  <div class="pdnr2">
+    <ul>
+      <li style="font-size:13px;text-indent:9px;color:#474747">资讯 </li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/zsksxxgkzl/">招生考试 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/jyzt/sqsh/">暑期生活 </a></li>
+    
+      <li><a target="_blank" href="http://sjjd.mhedu.sh.cn/" class="yqlj">实践基地 </a></li>
+      <li><a target="_blank" href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/xl.action">心理健康</a></li>
+     
+    </ul>
+    <ul>
+      <li style="font-size:13px;text-indent:9px;color:#474747">查询 </li>
+      <li><a target="_blank" href="http://www.mhedu.sh.cn/school/list.jsp?tm_id=475">学校查询 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?cat_id=13538" >学区查询 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/pic.htm?/newmhjy/images/xlcx.png">校历查询 </a></li>
+      <li><a target="_blank" href="http://www.mhedu.sh.cn/school/list.jsp?tm_id=475">学费查询 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/appeal/chengji.htm">中考查分 </a></li>
+      <li><a target="_blank" href="http://www.mhedu.sh.cn/school/list.jsp?tm_id=475">招生简章</a></li>
+     
+    </ul>
+    <ul>
+      <li style="font-size:13px;text-indent:9px;color:#474747">办事  </li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?cat_id=12560">审批事项 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?cat_id=12561">服务事项 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/appeal/form.jsp?model_id=1">网上咨询 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/appeal/form.jsp?model_id=2">网上信访 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/survey/list.jsp?s_id=f65b3951-5014-4e9f-9c46-0b485497b62a">网上调查 </a></li>
+      
+    </ul>
+    <ul>
+      <li style="font-size:13px;text-indent:9px;color:#474747">应用 </li>
+      <li><a target="_blank" href="http://weibo.com/u/3284847533">闵教微博 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?cat_id=12556">闵教微信 </a></li>
+      <li><a target="_blank" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.haizitong.minhang.jia">闵豆家园 </a></li>
+      
+     
+     <!-- <li><a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MDU5MzU3Mw==&scene=124#wechat_redirect">家长学校 </a></li>-->
+    </ul>
+  </div>
+ </div>
+  <div class="pdnr" id="pdnr_2">
+   <div class="pdnr1"><span>健康的孩子  闵行的未来</span>教师</div>
+  <div style="clear:both;"></div>
+  <div class="pdnr2">
+    <ul>
+      <li style="font-size:13px;text-indent:9px;color:#474747">资讯 </li>
+      <li><a target="_blank" href="http://rczp.mhedu.sh.cn">教师招聘</a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/nIndex.jsp?node_id=GKxxgk&amp;cat_id=12706">教师培训 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/nIndex.jsp?node_id=GKxxgk&amp;cat_id=12642">教育人事</a></li>
+    
+      <li><a target="_blank" href="https://jyxy.mhedu.sh.cn/extranet/web/mhedu/xl.action">心理健康</a></li>
+   
+    </ul>
+    <ul>
+      <li style="font-size:13px;text-indent:9px;color:#474747">查询 </li>
+      <li><a target="_blank" href="http://rczp.mhedu.sh.cn/">岗位查询</a></li>
+      <li><a target="_blank" href="http://www.mhedu.sh.cn/school/list.jsp?tm_id=475">学校查询</a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/pic.htm?/newmhjy/images/xlcx.png">校历查询</a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/appeal/chengji.htm">中考查分</a></li>
+    
+    </ul>
+    <ul>
+      <li style="font-size:13px;text-indent:9px;color:#474747">办事  </li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?cat_id=12560">审批事项 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?cat_id=12561">服务事项 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/appeal/form.jsp?model_id=1">网上咨询 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/appeal/form.jsp?model_id=2">网上信访 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/survey/list.jsp?s_id=f65b3951-5014-4e9f-9c46-0b485497b62a">网上调查 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?tm_id=308" >网上征询</a></li>
+    </ul>
+    <ul>
+      <li style="font-size:13px;text-indent:9px;color:#474747">应用 </li>
+      <li><a target="_blank" href="http://weibo.com/u/3284847533">闵教微博 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?cat_id=12556">闵教微信 </a></li>
+      <li><a target="_blank" href="http://jiaoshi.mhedu.sh.cn/">教师平台</a></li>
+     
+    
+      
+    </ul>
+  </div>
+
+  </div>
+  <div class="pdnr" id="pdnr_3">
+  <div class="pdnr1"><span>健康的孩子  闵行的未来</span>学校</div>
+  <div style="clear:both;"></div>
+      <div class="pdnr2">
+    <ul>
+      <li style="font-size:13px;text-indent:9px;color:#474747">资讯 </li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/nIndex.jsp?node_id=GKxxgk&amp;cat_id=12596">通知公告</a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?cat_id=12554">学校新闻</a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/nIndex.jsp?node_id=GKxxgk&amp;cat_id=13605">政策文件 </a></li>
+     
+     
+      <li><a target="_blank" href="https://bxjx.mhedu.sh.cn">教育督导</a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/jygg.htm">教育发展</a></li>
+   
+    </ul>
+    <ul>
+      <li style="font-size:13px;text-indent:9px;color:#474747">查询 </li>
+      <li><a target="_blank" href="http://www.mhedu.sh.cn/school/list.jsp?tm_id=475">学校查询</a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?cat_id=13538">学区查询</a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/pic.htm?/newmhjy/images/xlcx.png">校历查询</a></li>
+      <li><a target="_blank" href="http://www.mhedu.sh.cn/school/list.jsp?tm_id=475">学费查询</a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/appeal/chengji.htm">中考查分</a></li>
+ 
+    </ul>
+    <ul>
+      <li style="font-size:13px;text-indent:9px;color:#474747">办事  </li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?cat_id=12560">审批事项 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?cat_id=12561">服务事项 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/appeal/form.jsp?model_id=1">网上咨询 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/appeal/form.jsp?model_id=2">网上信访 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/survey/list.jsp?s_id=f65b3951-5014-4e9f-9c46-0b485497b62a">网上调查 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?tm_id=308" >网上征询</a></li>
+      
+    </ul>
+    <ul>
+      <li style="font-size:13px;text-indent:9px;color:#474747">应用 </li>
+      <li><a target="_blank" href="http://weibo.com/u/3284847533">闵教微博 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?cat_id=12556">闵教微信 </a></li>
+      <li><a target="_blank" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.haizitong.minhang.jia">闵豆家园</a></li>
+     
+      <li><a target="_blank" href="http://jiaoshi.mhedu.sh.cn/">教师平台</a></li>
+   </ul>
+  </div>
+  </div>
+  <div class="pdnr" id="pdnr_4">
+    <div class="pdnr1"><span>健康的孩子  闵行的未来</span>公众</div>
+  <div style="clear:both;"></div>
+      <div class="pdnr2">
+    <ul>
+      <li style="font-size:13px;text-indent:9px;color:#474747">资讯 </li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?cat_id=12553">闵教要闻</a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/xxgk/">信息公开</a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/zcjd.htm">政策解读 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/jyzt/czzj/">财政资金 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/nIndex.jsp?node_id=GKxxgk&amp;cat_id=12648">教育督导 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/jygg.htm">教育发展</a></li>
+    </ul>
+    <ul>
+      <li style="font-size:13px;text-indent:9px;color:#474747">查询 </li>
+      <li><a target="_blank" href="http://www.mhedu.sh.cn/school/list.jsp?tm_id=475">学校查询 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?cat_id=13538">学区查询</a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/pic.htm?/newmhjy/images/xlcx.png">校历查询</a></li>
+      <li><a target="_blank" href="http://www.mhedu.sh.cn/school/list.jsp?tm_id=475">学费查询</a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/appeal/chengji.htm">中考查分</a></li>
+  
+    </ul>
+    <ul>
+      <li style="font-size:13px;text-indent:9px;color:#474747">办事  </li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?cat_id=12560">审批事项 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?cat_id=12561">服务事项 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/appeal/form.jsp?model_id=1">网上咨询 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/appeal/form.jsp?model_id=2">网上信访 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/survey/list.jsp?s_id=f65b3951-5014-4e9f-9c46-0b485497b62a">网上调查 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?tm_id=308" >网上征询</a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/nIndex.jsp?node_id=GKxxgk&amp;cat_id=12820">信息公开申请</a></li>
+      
+      
+      
+
+    </ul>
+    <ul>
+      <li style="font-size:13px;text-indent:9px;color:#474747">应用 </li>
+      <li><a target="_blank" href="http://weibo.com/u/3284847533">闵教微博 </a></li>
+      <li><a target="_blank" href="https://www.mhedu.sh.cn/info/iList.jsp?cat_id=12556">闵教微信 </a></li>
+      <li><a target="_blank" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.haizitong.minhang.jia">闵豆家园</a></li>
+     
+      
+    </ul>
+  </div>
+  </div>
+<!----分众导航结束------->
+
+<script src="https://www.mhedu.sh.cn/newmhjy/js/commonJianFanTran.js"></script>
+  <!--<style>
+    body *{
+-webkit-filter: grayscale(100%); /* webkit */
+-moz-filter: grayscale(100%); /*firefox*/
+-ms-filter: grayscale(100%); /*ie9*/
+-o-filter: grayscale(100%); /*opera*/
+filter: grayscale(100%);
+filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); 
+filter:gray; /*ie9- */
+}
+
+  
+
+</style>-->
+
+
+翻译
+搜索
+复制
+
+翻译
+搜索
+复制
+
+翻译
+搜索
+复制
+
+翻译
+搜索
+复制
+
+翻译
+搜索
+复制
+
+翻译
+搜索
+复制
+
+<!-- ---- 首页>>--【尾部】 -- 标签结束 ---- -->
+</body>
+</html>

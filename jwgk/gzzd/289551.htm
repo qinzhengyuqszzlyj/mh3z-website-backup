@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>闵行三中作业管理、设计与实施方案
+</title>
+  <!-- ---- 标签>>--【引入】 -- 标签开始 ---- -->
+  <link href="../../static/css/style.css" type="text/css" rel="stylesheet" />
+<script src="../../wcm.files/js/jqueryN.js" type="text/javascript"></script>
+<script src="../../static/js/FloatPic.js" type="text/javascript"></script>
+<!-- <script src="/static/js/MSClass.js" type="text/javascript"></script> -->
+<script src="../../static/js/login.js" type="text/javascript"></script>
+<script src="../../static/js/FlashPic.js" type="text/javascript"></script>
+<script src="https://mh3z.qinzhengyuqszzlyj.us.kg/static/js/fdtp.js" type="text/javascript"></script>
+<script src="../../static/js/jquery.media.js" type="text/javascript"></script>
+
+<script src="https://mh3z.qinzhengyuqszzlyj.us.kg/static/js/jquery.js" language="javascript" type="text/javascript"></script>
+<script src="../../static/js/jquery.SuperSlide.2.1.3.js"></script>
+
+<script src="../../static/js/BigInt.js" type="text/javascript"></script>
+<script src="../../static/js/RSA.js" type="text/javascript"></script>
+<script src="../../static/js/Barrett.js" type="text/javascript"></script>
+<link href="../../static/css/jquery.slideBox.css" rel="stylesheet" type="text/css" />
+<script src="../../static/js/jquery.slideBox.min.js" type="text/javascript"></script>
+
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+<script src="https://unpkg.com/dayjs@1.8.21/locale/zh-cn.js"></script>
+  <!-- ---- 标签>>--【引入】 -- 标签结束 ---- -->
+
+  <style type="text/css">
+    #bom {
+      height: 140px;
+    }
+
+    .flex-between {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .levelBar .more {
+      margin-right: 20px;
+    }
+
+    .more:hover {
+      color: #bd0600;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="index1">
+    <!-- ---- 标签>>--【头】 -- 标签开始 ---- -->
+    <style type="text/css">
+  .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+  .nav {
+    display: flex;
+  }
+
+  .nav .nLi {
+    position: relative;
+    text-align: center;
+  }
+
+  .nav .sub {
+    display: none;
+  }
+  .art_box img{ max-width: 900px; text-align: center;}
+  .art_box {
+  height: auto !important;
+  min-height: 500px;
+  height: 500px;
+  color: #393939;
+  margin-bottom: 60px;
+
+  display: block;
+}
+
+</style>
+<div class="banner">
+  <img src="../../static/images/logo7712.png" width="964" height="257">
+</div>
+
+<ul id="nav" class="nav clearfix ">
+  <li class="nLi">
+    <h3><a href="../../mh3z_mhedu_sh_default.html">首页</a></h3>
+  </li>
+        <li class="nLi">
+        <h3><a href="../../info/iIndex.htm">走进闵三</a></h3>
+        <ul class="sub" style="display: none;">
+                              <li><a href="../../info/iList.htm">学校概况</a></li>
+                              <li><a href="../../info/iList_2.htm">校长专栏</a></li>
+                              <li><a href="../../info/iList_3.htm">机构设置</a></li>
+                              <li><a href="../../info/iList_4.htm">喜报频传</a></li>
+                </ul>
+  </li>
+  
+      <li class="nLi">
+        <h3><a href="../../info/iIndex_2.htm">校务公开</a></h3>
+        <ul class="sub" style="display: none;">
+                              <li><a href="../../info/iList_5.htm">新闻中心</a></li>
+                              <li><a href="../../info/iList_6.htm">通知公告</a></li>
+                              <li><a href="../../info/iList_7.htm">社会关注</a></li>
+                              <li><a href="../../info/iList_8.htm">发展规划</a></li>
+                              <li><a href="../../info/iList_9.htm">规章制度</a></li>
+                              <li><a href="../../info/iList_10.htm">后勤保障</a></li>
+                </ul>
+  </li>
+  
+      <li class="nLi">
+        <h3><a href="../../info/iIndex_3.htm">党建工作</a></h3>
+        <ul class="sub" style="display: none;">
+                              <li><a href="../../info/iList_11.htm">党务公开</a></li>
+                              <li><a href="../../info/iList_12.htm">文明建设</a></li>
+                              <li><a href="../../info/iList_13.htm">党建特色</a></li>
+                </ul>
+  </li>
+  
+      <li class="nLi">
+        <h3><a href="../../info/iIndex_4.htm">德育天地</a></h3>
+        <ul class="sub" style="display: none;">
+                              <li><a href="../../info/iList_14.htm">德育动态</a></li>
+                              <li><a href="../../info/iList_15.htm">学生社团</a></li>
+                              <li><a href="../../info/iList_16.htm">学生之星</a></li>
+                                    <li><a href="../../info/iIndex_6.htm">家校互动 </a></li>
+                              <li><a href="../../info/iList_17.htm">心理健康</a></li>
+                </ul>
+  </li>
+  
+      <li class="nLi">
+        <h3><a href="../../info/iIndex_5.htm">教师频道</a></h3>
+        <ul class="sub" style="display: none;">
+                              <li><a href="../../info/iList_18.htm">教师风采</a></li>
+                              <li><a href="../../info/iList_19.htm">教学动态</a></li>
+                              <li><a href="../../info/iList_20.htm">教育科研</a></li>
+                              <li><a href="../../info/iList_21.htm">教师培训</a></li>
+                              <li><a href="../../info/iList_22.htm">名师工作室</a></li>
+                </ul>
+  </li>
+  
+      <li class="nLi">
+        <h3><a href="../../info/iIndex_7.htm">学校特色</a></h3>
+        <ul class="sub" style="display: none;">
+                              <li><a href="../../info/iList_23.htm">航空航天</a></li>
+                              <li><a href="../../info/iList_24.htm">美育昆曲</a></li>
+                              <li><a href="../../info/iList_25.htm">女足女曲</a></li>
+                </ul>
+  </li>
+  
+      <li class="nLi">
+        <h3><a href="../../info/iIndex_8.htm">教工之家</a></h3>
+        <ul class="sub" style="display: none;">
+                              <li><a href="../../info/iList_26.htm">工会新闻</a></li>
+                              <li><a href="../../info/iList_27.htm">工会活动</a></li>
+                              <li><a href="../../info/iList_28.htm">民主管理</a></li>
+                              <li><a href="../../info/iList_29.htm">巾帼园地</a></li>
+                </ul>
+  </li>
+  
+      <li class="nLi">
+        <h3><a href="../../info/iIndex_9.htm">群团工作</a></h3>
+        <ul class="sub" style="display: none;">
+                              <li><a href="../../info/iList_30.htm">青工委 </a></li>
+                              <li><a href="../../info/iList_31.htm">共青团 </a></li>
+                              <li><a href="../../info/iList_32.htm">少先队 </a></li>
+                              <li><a href="../../info/iList_33.htm">退管会 </a></li>
+                </ul>
+  </li>
+  
+      <li class="nLi">
+        <h3><a href="../../info/iIndex_10.htm">招生工作</a></h3>
+        <ul class="sub" style="display: none;">
+                              <li><a href="../../info/iList_34.htm">初中招生</a></li>
+                              <li><a href="../../info/iList_35.htm">高中招生</a></li>
+                </ul>
+  </li>
+  
+      <li class="nLi">
+        <h3><a href="http://106.15.5.115:8124/">空天微校</a></h3>
+      </li>
+  
+      <li class="nLi">
+        <h3><a href="../../info/iList_36.htm">教师招聘</a></h3>
+      </li>
+  
+  
+</ul>
+
+<div class="notice">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="26%" height="37" style="text-indent:15px;">
+        <div id="date"></div>
+      </td>
+      <td width="48%" style="text-indent:15px;">
+        <marquee direction="left" type="" width="400" height="20" scrollamount="3" onmouseOut="this.start()" onmouseOver="this.stop()">
+         <!--  -->
+        <a href="https://mp.weixin.qq.com/s/6AR-NtGPIdVoPVcwUL2CWg" target="_blank" title="五育融合促成长 以劳育德展风采——闵行三中2023级学工学农综合实践活动纪实" class="in_notice" style="padding-left:50px;">五育融合促成长 以劳育德展风采——闵行三中2023级学工学农综合实践活动纪实</a>
+        <!--  -->
+        <a href="https://mp.weixin.qq.com/s/-cqpuNFUZEFQlHjDc-ORcQ" target="_blank" title="奋进新征程 强国勇担当——记2024级高一年级东方绿舟国防教育活动" class="in_notice" style="padding-left:50px;">奋进新征程 强国勇担当——记2024级高一年级东方绿舟国防教育活动</a>
+        <!--  -->
+        <a href="https://mp.weixin.qq.com/s/iIygo_4wylk6vY1pNlmUXw" target="_blank" title="争当时代先锋  尽展青春风采——“位育杯”第十九届上海市高中名校读书节活动闵三学子斩获奖项" class="in_notice" style="padding-left:50px;">争当时代先锋  尽展青春风采——“位育杯”第十九届上海市高中名校读书节活动闵三...</a>
+        <!--  -->
+        <a href="https://mp.weixin.qq.com/s/anjEiWXPQyfy4F0SX4dWdg" target="_blank" title="技术赋能 精准教学——闵行三中第六届“空天杯”尊重学堂教学大奖赛暨新教师展示周活动纪实" class="in_notice" style="padding-left:50px;">技术赋能 精准教学——闵行三中第六届“空天杯”尊重学堂教学大奖赛暨新教师展示...</a>
+        <!--  -->
+        <a href="https://mp.weixin.qq.com/s/GpB0tjTfnuR2ct9rSutopA" target="_blank" title="闵行三中团委、2022级高中9班团支部获团市委通报表扬" class="in_notice" style="padding-left:50px;">闵行三中团委、2022级高中9班团支部获团市委通报表扬</a>
+        <!--  -->
+        <a href="https://mp.weixin.qq.com/s/KS9iFFF1cphgNc0qVEjXeg" target="_blank" title="闵行三中校园消防安全实训" class="in_notice" style="padding-left:50px;">闵行三中校园消防安全实训</a>
+        <!--  -->
+        <a href="https://mp.weixin.qq.com/s/J9NrZ8Bdn3KhYqscfZL5hA" target="_blank" title=" “跨”学科之桥“研”融合之道“成”育人之行——闵行“交大—江川”学区刘辉跨学科教育名师工作室活动" class="in_notice" style="padding-left:50px;"> “跨”学科之桥“研”融合之道“成”育人之行——闵行“交大—江川”学区刘辉跨...</a>
+        <!--  -->
+        <a href="https://mp.weixin.qq.com/s/tDj2wVBBjGDidKqhN3MlOw" target="_blank" title="“督”以提质 “导”开新篇——闵行三中迎接办学水平综合督导" class="in_notice" style="padding-left:50px;">“督”以提质 “导”开新篇——闵行三中迎接办学水平综合督导</a>
+        <!--  -->
+        <a href="https://mp.weixin.qq.com/s/KMb7cu6tNvni1zeRg4u8Kg?poc_token=HNQfQGejKZvdsdtBZ-UuldCWhcz0rdm21eXpyqoV" target="_blank" title="雏鹰展翅  逐梦蓝天——闵行三中“雏鹰计划”招飞指导培训圆满落幕" class="in_notice" style="padding-left:50px;">雏鹰展翅  逐梦蓝天——闵行三中“雏鹰计划”招飞指导培训圆满落幕</a>
+        <!--  -->
+        <a href="https://mp.weixin.qq.com/s/T0wyzTVudUGl_dRD1S5pEA" target="_blank" title="创新实践 共筑未来——闵行三中引领综合实践课程新风尚" class="in_notice" style="padding-left:50px;">创新实践 共筑未来——闵行三中引领综合实践课程新风尚</a>
+        <!--  -->
+        <a href="https://mp.weixin.qq.com/s/E3tJGoZXYq4WrAXiqhBcsw" target="_blank" title="提升班主任素养  发展高质量教育——闵行三中第十一届班主任节庆祝活动" class="in_notice" style="padding-left:50px;">提升班主任素养  发展高质量教育——闵行三中第十一届班主任节庆祝活动</a>
+        <!--  -->
+        <a href="https://mp.weixin.qq.com/s/28VxarbNx8DOY0d2WzwLlg" target="_blank" title="时光织梦  共绘中泰研学画卷——闵行三中接待泰国学生研学营" class="in_notice" style="padding-left:50px;">时光织梦  共绘中泰研学画卷——闵行三中接待泰国学生研学营</a>
+        <!--  -->
+        <a href="http://mp.weixin.qq.com/s?__biz=MzAwNjIzMjgyMA==&mid=2650945145&idx=1&sn=7b81cba0d3698644ecae8b970b684be7&chksm=81e8fa3d775e9ee6f702f3b6ecb032b71ec91ac99a8d04128e98be9acf2733cd71c1143cca97&mpshare=1&scene=23&srcid=0910QLjQUY8iuquY2bXTp1gS&sharer_shareinfo=d88092e98c5ba4bb61cc1922488dcaa4&sharer_shareinfo_first=d88092e98c5ba4bb61cc1922488dcaa4#rd" target="_blank" title="翱翔蓝天之梦  逐梦苍穹之旅 " class="in_notice" style="padding-left:50px;">翱翔蓝天之梦  逐梦苍穹之旅 </a>
+        <!--  -->
+        <a href="../xwzx/299368.htm" target="_blank" title="2024年上海市闵行第三中学高中自主招生正式录取学生名单公示" class="in_notice" style="padding-left:50px;">2024年上海市闵行第三中学高中自主招生正式录取学生名单公示</a>
+        <!--  -->
+        <a href="../xwzx/299323.htm" target="_blank" title="2024年上海市闵行第三中学高中自主招生（市实验、市特色）预录取名单" class="in_notice" style="padding-left:50px;">2024年上海市闵行第三中学高中自主招生（市实验、市特色）预录取名单</a>
+        <!--  -->
+        </marquee>
+      </td>
+      <td width="26%">
+        <div class="searchBox" style="padding-left:80px;">
+          <form id="searchform" name="searchform" action="https://mh3z.qinzhengyuqszzlyj.us.kg/search/searchResultGJ.htm" method="get" style="position: relative;">
+            <input id="q" name="q" placeholder="请输入关键词" type="text" class="search_text inp input">
+            <input type="hidden" value="884" name="t_id">
+            <input type="hidden" value="red" name="color" >
+            <input type="hidden" value="" name="site_id" style="width:0;">
+            
+            <button type="submit" class="search_btn bg-main sBtn" style="border: 0;">搜索</button>
+          </form>
+
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+<script>
+  jQuery("#nav").slide({ type: "menu", titCell: ".nLi", targetCell: ".sub", delayTime: 0, triggerTime: 0, returnDefault: true });
+  dayjs.locale('zh-cn');
+  $("#date").text(dayjs().format('YYYY年MM月DD日 星期dd'));
+</script>
+    <!-- ---- 标签>>--【头】 -- 标签结束 ---- -->
+    <div style="clear:both"></div>
+
+    <div id="content" class="c1">
+                <div class="position" style="margin-bottom:26px;">
+        当前位置：                 <a href="https://mh3z.qinzhengyuqszzlyj.us.kg/mh3z_mhedu_sh_default.html">首页</a><span> &gt;</span>
+                                                <a  href="https://mh3z.qinzhengyuqszzlyj.us.kg/info/iIndex_2.htm" >
+
+          校务公开</a>
+        <span> &gt; 
+
+        </span>
+                                                                <a  href="https://mh3z.qinzhengyuqszzlyj.us.kg/info/iList_9.htm" >
+
+          规章制度</a>
+        <span> &gt; 
+
+        </span>
+                                
+        正文
+      </div>
+
+      <h1 class="art_title">闵行三中作业管理、设计与实施方案</h1>
+      <p class="articalDate">
+        <span> 来源： 闵行三中&nbsp;&nbsp;</span>
+        <span> 发布日期： 2021年08月30日&nbsp;&nbsp;</span>
+      </p>
+      <div class="art_box">
+        <p style="text-align:center;"><strong><span style="font-family:黑体;font-size:15.0000pt;"><span style="font-family:黑体;">闵行三中作业管理、设计与实施方案</span></span></strong></p><p><span style="font-family:楷体;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">2017年9月，中办和国办印发的《关于深化教育体制改革的意见》中提出“要切实减轻学生过重课外负担。提高课堂教学质量，严格按照课程标准开展教学，合理设计学生作业内容与时间，提高作业的有效性。”2019年6月23日颁布的《中共中央国务院关于深化教育教学改革全面提高义务教育质量的意见》第十条明确提出“不断提高作业设计质量”的要求。2021年4月8日教育部办公厅又出台了“五项管理”的相关要求。</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;<span style="font-family:仿宋;">学校作业管理是学校日常管理的重要组成部分，是落实全面育人、加强师资建设、做好新时期家校共育工作的有效抓手。加强作业管理要坚持育人为本、落实立德树人根本任务，根据课标和意见确定作业内容、难度和数量，加强备课、上课、作业、辅导、评价等工作的系统性设计；要坚持尊重差异，因材施教，充分考虑学生的兴趣和能力等特点，不断提升学校作业的针对性和有效性，探索可供选择的弹性作业；要坚持统筹协调，合理控制各学科基础性和弹性作业总量，有序安排实践性作业、跨学科作业，不断完善学校作业管理机制；要坚持综合管理、标本兼治，引导家长和社会树立科学的教育质量观和人才培养观，共同营造有利于学生健康成长的环境。</span></span></p><p><span style="font-family:楷体;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">为贯彻落实中央、市、区有关精神，进一步规范学校教育教学管理，全面提高教育教学质量，坚决扭转一些学校作业数量过多、质量不高、功能异化等突出问题，现就加强学校作业管理、设计与实施提出如下要求。</span></span></p><p><span style="font-family:黑体;font-size:12.0000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:黑体;">一、健全学校作业管理机制。</span></span></p><p><span style="font-family:黑体;font-size:12.0000pt;">&nbsp;&nbsp;&nbsp;</span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">学校应完善作业管理细则，明确具体工作要求，建立以校长为第一责任人的工作机制。要切实履行作业管理主体责任，初高中各年级组都要执行学校作业公示制度</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">（见下表</span>1）</span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">，课程部和学工部每日进行督导检查。加强作业全过程管理，每学期初要对学生作业作出规划，加强年级组、学科组作业统筹协调，合理确定各学科作业比例结构，建立作业总量审核监管和质量定期评价制度。教师必须对作业来源、设计、布置、批改、分析、反馈、辅导等全过程管理，加强作业与备课、上课、辅导、评价等教学环节的系统设计。</span></span></p><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">表</span>1 &nbsp;闵行三中课后书面作业公示</span></p><table border="1" cellspacing="0"><tbody><tr><td colspan="6" style="width:426.1000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:Calibri;">&nbsp;&nbsp;</span></span><u><span style="font-family:宋体;font-size:10.5pt;"><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></u><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">（年级）</span></span><u><span style="font-family:宋体;font-size:10.5pt;"><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></u><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">班</span> <span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>时间：</span><u><span style="font-family:宋体;font-size:10.5pt;"><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></u><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">年</span></span><u><span style="font-family:宋体;font-size:10.5pt;"><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;</span></span></u><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">月</span></span><u><span style="font-family:宋体;font-size:10.5pt;"><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;</span></span></u><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">日</span></span></p></td></tr><tr><td style="width:47.9500pt;"><p style="text-align:center;"><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">学科</span></span></p></td><td style="width:113.4000pt;"><p style="text-align:center;"><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">作业内容</span></span></p></td><td style="width:70.8500pt;"><p style="text-align:center;"><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">作业来源</span></span></p></td><td style="width:56.7000pt;"><p style="text-align:center;"><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">完成时间</span></span></p><p style="text-align:center;"><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">（分钟）</span></span></p></td><td style="width:56.7000pt;"><p style="text-align:center;"><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">能</span></span><span style="font-family:Calibri;font-size:10.5000pt;"><span style="font-family:宋体;">否在校内完成</span></span></p></td><td style="width:80.5000pt;"><p style="text-align:center;"><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">任课教师签名</span></span></p></td></tr><tr><td style="width:47.9500pt;"><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">语文</span></span></p></td><td style="width:113.4000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:70.8500pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">练习册</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">其他：</span></span></p></td><td style="width:56.7000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:56.7000pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">能</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">部分</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p></td><td style="width:80.5000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td></tr><tr><td style="width:47.9500pt;"><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">数学</span></span></p></td><td style="width:113.4000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:70.8500pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">练习册</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">其他：</span></span></p></td><td style="width:56.7000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:56.7000pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">能</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">部分</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p></td><td style="width:80.5000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td></tr><tr><td style="width:47.9500pt;"><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">英语</span></span></p></td><td style="width:113.4000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:70.8500pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">练习册</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">其他：</span></span></p></td><td style="width:56.7000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:56.7000pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">能</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">部分</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p></td><td style="width:80.5000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td></tr><tr><td style="width:47.9500pt;"><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">物理</span></span></p></td><td style="width:113.4000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:70.8500pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">练习册</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">其他：</span></span></p></td><td style="width:56.7000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:56.7000pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">能</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">部分</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p></td><td style="width:80.5000pt;"><p><span style="font-family:Calibri;color:rgb(255,0,0);font-size:10.5000pt;">&nbsp;</span></p></td></tr><tr><td style="width:47.9500pt;"><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">化学</span></span></p></td><td style="width:113.4000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:70.8500pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">练习册</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">其他：</span></span></p></td><td style="width:56.7000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:56.7000pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">能</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">部分</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p></td><td style="width:80.5000pt;"><p><span style="font-family:Calibri;color:rgb(255,0,0);font-size:10.5000pt;">&nbsp;</span></p></td></tr><tr><td style="width:47.9500pt;"><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">科学</span>/</span></p><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">生命科学</span></span></p></td><td style="width:113.4000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:70.8500pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">练习册</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">其他：</span></span></p></td><td style="width:56.7000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:56.7000pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">能</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">部分</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p></td><td style="width:80.5000pt;"><p><span style="font-family:Calibri;color:rgb(255,0,0);font-size:10.5000pt;">&nbsp;</span></p></td></tr><tr><td style="width:47.9500pt;"><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">道</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">德与法制</span></span></p></td><td style="width:113.4000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:70.8500pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">练习册</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">其他：</span></span></p></td><td style="width:56.7000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:56.7000pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">能</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">部分</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p></td><td style="width:80.5000pt;"><p><span style="font-family:Calibri;color:rgb(255,0,0);font-size:10.5000pt;">&nbsp;</span></p></td></tr><tr><td style="width:47.9500pt;"><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">历史</span></span></p></td><td style="width:113.4000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:70.8500pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">练习册</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">其他：</span></span></p></td><td style="width:56.7000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:56.7000pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">能</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">部分</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p></td><td style="width:80.5000pt;"><p><span style="font-family:Calibri;color:rgb(255,0,0);font-size:10.5000pt;">&nbsp;</span></p></td></tr><tr><td style="width:47.9500pt;"><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">地理</span></span></p></td><td style="width:113.4000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:70.8500pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">练习册</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">其他：</span></span></p></td><td style="width:56.7000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:56.7000pt;"><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">能</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">部分</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">□</span></span></p></td><td style="width:80.5000pt;"><p><span style="font-family:Calibri;color:rgb(255,0,0);font-size:10.5000pt;">&nbsp;</span></p></td></tr><tr><td style="width:47.9500pt;"><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">体育</span></span></p></td><td style="width:113.4000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:70.8500pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:56.7000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:56.7000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:80.5000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td></tr><tr><td style="width:47.9500pt;"><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">信息科技</span></span></p></td><td style="width:113.4000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:70.8500pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:56.7000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:56.7000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td style="width:80.5000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td></tr><tr><td style="width:47.9500pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td><td colspan="4" style="width:297.6500pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">完成总时间：</span></span><u><span style="font-family:宋体;font-size:10.5pt;"><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></u><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">分钟</span> <span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>统计人：</span><u><span style="font-family:宋体;font-size:10.5pt;"><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></u></p></td><td style="width:80.5000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td></tr></tbody></table><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">注：统计人每日将此表格上交班主任老师，然后再交年级组长。校长室、课程部负责建立作业公示制度：由教研组与备课组总体负责、年级组与班主任总体调控、任课教师直接管理。</span></span></p><p><span style="font-family:黑体;font-size:12.0000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:黑体;">二、作业设计与实施模式。</span></span></p><p><img width="319" height="176" src="file:///C:\Users\HP\AppData\Local\Temp\ksohtml\wps9A6E.tmp.png" alt="" /><span style="font-family:黑体;font-size:12.0000pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">作业设计是依据一定的目的，选择重组、改变完善或者自主开发等多种形式形成作业的过程。要确保作业设计质量，须全面关注作业类型多样、可理解性、解释性、必要性、作业量和作业难度等维度，系统思考教学、作业、评价的一致性和互补性的前提下，根据作业目标体系、作业新颖性和综合应用性、作业结构等，设计出高质量的作业。作业实施则是指作业布置、作业批改、作业讲评和统计分析。作业设计与实施的循环图如下。</span></span></p><p><span style="font-family:华文楷体;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p><span style="font-family:楷体;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:楷体;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:楷体;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:楷体;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:楷体;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:仿宋;">作业主要来源于市审查通过的相关练习册、教材中的相关习题的演变、各地高考题和优秀的<a target="_blank" href="https://mh3z.qinzhengyuqszzlyj.us.kg/jwgk/gzzd/1">地方</a>模拟题的改编以及校本化的单元作业等。杜绝使用未经学校及上级主管部门备案审查的学习类</span>APP布置作业，严禁强行要求或组织学生购买未经国家或本市审查通过的教学材料。</span></p><p><span style="font-family:黑体;font-size:12.0000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:黑体;">三、作业设计与实施的具体要求。</span></span></p><p><span style="font-family:黑体;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:黑体;">1、严控书面作业总量和时间。</span></span></p><p><span style="font-family:黑体;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;</span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">作业管理做到</span>“精选、精练、精批、精讲”。备</span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">课组统一书面作业及总量：</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">初中每天书面作业完成时间平均不超过</span> 90 分钟，</span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">其中初中语、数、英每科不超过</span>25分钟，物、化不超过10分钟，</span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">且在校内完成大部分书面作业，做到初中疑难作业不带回家。周末、寒暑假、法定节假日也要控制书面作业时间总量。</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">高中作业时间不超过</span>2小时，其中语、数、英不超过30分钟，等级考不超过15分钟，确保高中生8小时的睡眠时间。厘定作业内容；规定学生作业要求；同时利用好课后服务时间，坚决防止作业超标、作业超时、作业不分层、家长做作业、家长批改作业等问题。作业规划与信息平台双管齐下。</span></p><p><span style="font-family:黑体;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;<span style="font-family:黑体;">2、科学合理布置作业。</span></span></p><p><span style="font-family:黑体;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">科学设计作业，规范作业来源，统筹作业总量，努力做到各学段作业适度适量</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">。</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">教研组和课程部将作业设计纳入教研体系，加强作业设计的专题研究与培训，提升作业的科学性、专业性与多样性，运用信息技术提升作业有效性</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">。</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">系统设计符合年龄特点和学习规律、体现素质教育导向的基础性作业。</span> </span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">提倡备课组根据教学实际情况自主设计作业，形成校本化学科作业体系。</span> 高中学段坚持“一教一辅”底线要求，不依靠教辅资料随意布置作业，坚决克服机械、无效作业，杜绝重复性、惩罚性作业。加强校外培训机构正负清单日常监管，坚决防止校外培训机构给中小学生留作业，切实避免“校内减负、校外增负”。 </span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:仿宋;">3</span></span><span style="font-family:黑体;font-size:10.5000pt;"><span style="font-family:黑体;">、创新作业类型方式。</span></span></p><p><span style="font-family:黑体;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">根据学段、学科特点及学生实际需要和完成能力，合理布置书面作业、科学探究、体育锻炼、艺术欣赏、社会与劳动实践等不同类型作业</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">。这其中，首先，紧扣新教材中的《练习部分》，打破就题讲题的固有模式，特别关注学科思想方法的挖掘与拓展，以及题型的功能与创新及其对策，并进行适度拓展延伸。</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">作业类型应丰富多样，</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">题目类型分为选择题、填空题、判断题、简答题；听说题、活动题、合作题、开放题、综合运用等。教研组、备课组等要指导教师根据课标和意见合理布置、及时报备学科作业。要探索利用信息化等手段，以年级组等为单位统筹各学科日常及假期基础性作业和弹性作业总量，有序安排实践性作业、跨学科作业。</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">布置</span></span><u><span style="font-family:仿宋;font-size:10.5pt;"><span style="font-family:仿宋;">分层作业</span></span></u><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">（</span>A为基础作业，B为中档作业，C为选做作业，学生根据自身情况，自主选择完成）</span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">、</span></span><u><span style="font-family:仿宋;font-size:10.5pt;"><span style="font-family:仿宋;">弹性作业</span></span></u><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">、</span></span><u><span style="font-family:仿宋;font-size:10.5pt;"><span style="font-family:仿宋;">个性化作业</span></span></u><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">、</span></span><u><span style="font-family:仿宋;font-size:10.5pt;"><span style="font-family:仿宋;">项目化学习</span></span></u><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">和</span></span><u><span style="font-family:仿宋;font-size:10.5pt;"><span style="font-family:仿宋;">开放性作业</span></span></u><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">，科学设计探究性作业和实践性作业，探索跨学科综合性作业</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">。</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">杜绝机械、无效训练，严禁布置重复性、惩罚性作业</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">。</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">采用直接引用、改编完善、自主创编和多种方式组合。</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">从时间上，跨学科作业分为短周期、长周期作业；从对象上，按需组建混龄、走班和小组等不同方式开展；从形式上，作业设计更关注亲历知识发生和应用的过程，作业完成需充分利用场域资源，强调学科之间融合。从空间上，围绕学农基地、高校和科研院所实验室以及社会公共场所等鲜活的场域，将学科知识、社会生活和学生经验进行整合，设计与学生基础相适应的、重在迁移运用能力培养的跨学科综合实践活动作业，不断提高作业设计质量。</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:仿宋;">4</span></span><span style="font-family:黑体;font-size:10.5000pt;"><span style="font-family:黑体;">、提高作业设计质量</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">。</span></span></p><p><span style="font-family:楷体;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;</span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">各教研组要将作业设计作为校本教研重点，围绕作业的目标、内容、难度、类型、数量等关键要素，系统化选编、改编、创编符合学习规律、体现素质教育导向的基础性作业。</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">在备课计划中加入作业清单。备课组与教研组在预估一年里每单元、每课时的作业量和作业时长后，需制定一份学期作业规划。</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:仿宋;">教师要提高自主设计作业能力，针对学生不同情况，精准设计作业，根据实际学情，精选作业内容，合理确定作业数量，促进思维发展，作业难度不得超过国家课程标准要求。课程部要每学期组织开展作业设计与实施的教师培训与教研活动，定期组织开展优秀作业评选与展示交流活动，加强优质作业资源共建共享。</span></span></p><p><span style="font-family:楷体;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:楷体;">启用闵行三中</span>“启慧作业”微信公众号，并设置“作业备忘”功能。每天，任课教师要在信息平台上报各科作业的内容范围、预计完成时长等。班主任将于下午四点半前完成汇总作业的调控，将作业时长控制在90分钟以内，形成闭环管理。&nbsp;</span></p><p><span style="font-family:楷体;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:楷体;">课程教学部和年级组在每月每周对某一年段的所有学科的教师进行作业选题、设计、批改、反馈等方面的抽查，每年进行两次作业效能的问卷调查，进行全方位的作业诊断。</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;</span><span style="font-family:黑体;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;<span style="font-family:黑体;">5、用足用好上海市“空中课堂”资源</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">。</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:仿宋;">充分用好重难点教学资源，丰富学科教学资源库建设，特别是校本化作业体系。内容上，特别注意聚焦单元目标，强化教学内容的结构化组织，提炼、总结学科思想方法，上升到科学方法论层次，凸显学科的核心概念和关键能力。遴选高频率和高质量关注点，引导学生树立问题意识，提升教师问题化教学和评价能力，聚焦核心素养的培育。</span></span></p><p><span style="font-family:楷体;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:黑体;font-size:10.5000pt;"><span style="font-family:黑体;">6、抓住影响作业设计的关键要素</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">，包括作业功能、目标、科学性、难度、选择性和结构性。</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:仿宋;">⑴明确作业功能：</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">作业不仅要兼具评价功能，本质上更加是一种（自主）学习过程；作业不仅诊断巩固教学，更应与教学价值互补。作业与教学紧密相关，但又形成互补；不仅提升知识技能，还关注能力、方法、态度、习惯等。由此，首先应确保</span>“教考”一致性；同时兼顾学生的核心素养的培育。</span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:仿宋;">⑵精准叙写作业目标。</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">作业目标设计与作业功能定位紧密相关，与课程标准、学科教学基本要求、学生实际情况符合，作业实际内容与作业目标相一致，且确保目标适应不同水平层次的本班学生。</span>①单元作业目标要结构清晰、注重内在的逻辑性（常规目标、年级&lt;学期&gt;重点目标，单元重点目标）；②作业目标要指向明确、凸显重点、数量合理，避免过于宏大，或者过于琐碎；避免数量繁杂；③综合分析课标要求和学情，科学处理作业目标与教学目标的关系。</span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:仿宋;">⑶确保作业科学性：内容科学，用语精炼，易于理解，要求明确。</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">作业的要求要与学生身心特征相符合；作业的要求需要明确清晰；作业的内容表达须正确、无歧义；作业的答案不存在争议或无解现象。这里要特别强调情境和任务。情境是指学习发生的背景，其关键词是再建构、话题和评价。任务是指具体学习活动。任务有三个关键词，即兴趣、学习和思考。任务是带有情境的任务，往往是建构问题的解决。</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:仿宋;">⑷设计并实施不同难度的作业比例恰当。</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">应该基于年级、教学进程以及学生特点等合理设计难度，真正达到检测、诊断的效果。</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:仿宋;">⑸作业要体现学生的差异性（选择性）。提供一些不同类型学生选择的作业</span></span><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">。</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">作业的选择性，不是简单地进行分层；作业的选择性，可以根据不同学生认知风格进行差异性设计，如完成方式不同，提供脚手架不同等。</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:仿宋;">⑹优化作业的结构性。</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">主要考虑相同目标的作业量是否恰当；作业难易度的配比是否合适；各种类型的作业量是否控制在相对合理的范围内。</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:仿宋;">7、</span></span><span style="font-family:黑体;font-size:10.5000pt;"><span style="font-family:黑体;">作业批改</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">。</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">做到</span>“有练必躬、有发必收、有收必批、有批必评”，让学生练的，老师必须自己先做；发给学生做的，必须在规定的时间收上来；收上来的作业必须及时批阅；批阅的作业必须认真讲评，真正让学生精练、有效练，提高作业的效率；力争每天各科作业的面批率20%左右。不得要求学生自批自改，作业批改要正确规范、评语恰当。必须指明解题思路，指出错误之处，对布置的学生作业强化作业批改与反馈的育人功能。</span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:仿宋;">⑴格式上，应该要按照“工具”中的内容、表述、结构和数量的格式设计好作业。——一定要按格式做好作业设计，即综合考虑格式中的4个要素：内容上，与教学目标一致，与学生基础匹配。表述上，题干表述准确，完成要求清晰。结构上，单元内容覆盖面广；题型多样；难度分布合理——要进行单元备课。数量上，估计作业用时适当。</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;<span style="font-family:仿宋;">⑵作业批阅——做好作业批改工作，从现在就开始做好！关于“批改”：做到符号规范、清楚，红笔批改，批阅准确、及时、细致；要有针对性并提出相关要求；</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">批改作业要经常写批语，指出存在的问题或解决问题的思路，有针对不同对象的指导和要求。建议用鼓励性的评价来激发学生学习和完成作业的兴趣。</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">同时，高度重视学生作业订正，且订正后再批，对错误率高的学生应该面批；坚决杜绝要求家长或学生代批作业。</span></span></p><p><span style="font-family:黑体;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;<span style="font-family:黑体;">7、加强作业完成指导、讲评与反馈。</span></span></p><p><span style="font-family:黑体;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;</span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">教师要充分利用课堂教学时间和课后服务时间加强学生作业指导，力争周一至周五参加课后服务的学生、参加晚自习服务的初中学生书面作业不带回家。培养学生自主学习和时间管理能力</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">，</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">初中学生在校内完成大部分书面作业</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">。教师要做全面分析，梳理出作业中错误率高的作业，基于分析进而调整教学内容、流程，反思作业质量；</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">在内容上，科学利用信息技术手段进行作业数据分析诊断，通过作业精准分析学情，采取集体讲评、个别讲解等方式有针对性地及时反馈，共性问题和个性问题采取不同的讲解和讲评策略，提升作业评析、反馈的针对性和实效性，强化作业评改、反馈的育人功能，分层辅导，</span></span><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">针对</span>“吃不消”和“吃不饱”的孩子，尝试在课后服务作业辅导时段中探索“走班制”，根据不同学生的不同情况，分级个别化辅导，给“消化不良”的学生补差，关注心理和跟踪辅导，给学有余力的孩子更多提升的机会。</span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">在方法上，关注学生参与，兼顾学生差异，因材施教，注重实效。检查作业订正，单独讲解作业。</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;<span style="font-family:仿宋;">8、</span></span><span style="font-family:黑体;font-size:10.5000pt;"><span style="font-family:黑体;">发展作业专业发展能力</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">。包括自我反思、备课组讨论、阅读文章文献等。</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;<span style="font-family:仿宋;">9、</span></span><span style="font-family:黑体;font-size:10.5000pt;"><span style="font-family:黑体;">探索利用信息化等手段不断提升各类作业设计的科学性和有效性</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">。同时</span></span><span style="font-family:黑体;font-size:10.5000pt;"><span style="font-family:黑体;">运用</span>“可视化技术”提升作业设计品质</span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">，如下表所示。</span></span></p><table border="1" cellspacing="0"><tbody><tr><td style="width:83.4000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;background:rgb(0,128,0);">&nbsp;</span></p></td><td style="width:269.3000pt;"><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">整体分析判断内容</span></span></p></td><td style="width:73.4000pt;"><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">评价</span></span></p></td></tr><tr><td style="width:83.4000pt;"><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">作业目标</span></span></p></td><td style="width:269.3000pt;"><p><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">1.作业目标符合课程标准和学科教学基本要求的情况？</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">2.作业的目标与教学目标协同情况？</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">3.不同水平层次的作业目标适应本班学生情况？</span></span></p></td><td style="width:73.4000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td></tr><tr><td style="width:83.4000pt;"><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">作业结构</span></span></p></td><td style="width:269.3000pt;"><p><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">4.相同目标的作业量是否恰当？</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">5.作业难易度的配比是否合适？</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">6.各种类型的作业量是否控制在相对合理的范围内？</span></span></p></td><td style="width:73.4000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td></tr><tr><td style="width:83.4000pt;"><p style="text-align:center;"><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">作业科学性</span></span></p></td><td style="width:269.3000pt;"><p><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">7.作业的表述是否存在科学性错误？</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">8.作业的答案是否存在争议或无解现象？</span></span></p></td><td style="width:73.4000pt;"><p><span style="font-family:Calibri;font-size:10.5000pt;">&nbsp;</span></p></td></tr></tbody></table><p><span style="font-family:黑体;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;<span style="font-family:黑体;">10、</span></span><span style="font-family:黑体;font-size:10.5000pt;"><span style="font-family:黑体;">正确引导家长</span></span><span style="font-family:黑体;font-size:10.5000pt;"><span style="font-family:黑体;">。</span></span></p><p><span style="font-family:黑体;font-size:10.5000pt;">&nbsp;&nbsp;&nbsp;</span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">学校通过家委会</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">等</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">平台引导家长形成科学</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">教育观</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">，切实履行家庭教育主体责任，着力关注孩子自主学习能力，</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">狠抓</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">良好作业习惯，</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">形成家校合力</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">。</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">同时，</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">学校向家长提供</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">家庭教育以及时间管理等的</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">专题</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">指导</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">，</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">有效</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">引导家长</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">符合学生</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">个性特长、成长规律和发展需求进行学业和生涯规划，学会合理安排孩子业余生活，避免造成孩子过重的校外学习负担。保证初中生睡眠时间不少于</span> 9 小时。督促</span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">学生</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">孩子回家后主动完成</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">老师</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">布置的作业，引导</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">学生</span></span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">从事力所能及的家务劳动，激励孩子坚持进行感兴趣的体育锻炼和社会实践，不额外布置其他家庭作业。通过家长会、学校公众号等为家长的有效做法提供交流分享的平台，通过智慧传递加强有效经验的传播和再发展。</span></span></p><p><span style="font-family:仿宋;font-size:12.0000pt;">&nbsp;</span><span style="font-family:黑体;font-size:12.0000pt;">&nbsp;<span style="font-family:黑体;">四、将作业管理与实施纳入督导考核评价。</span></span></p><p><span style="font-family:黑体;font-size:12.0000pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:仿宋;font-size:10.5000pt;"><span style="font-family:仿宋;">学校将把作业设计、批改和反馈情况以及单元作业设计案例评比等纳入科研、教研、师训范围，对教师专业素养和教学实绩的考核评价。学校要指导教师准确理解课标和意见的内涵，明确相关内容评价要求，以单元作业设计等为抓手，持续开展相关研训工作，不断提升作业设计与命题能力，有效掌握各类作业实施方法。将作业设计、实施与命题能力以及家庭教育指导能力作为评价教师教育教学能力的内容之一。对于严重违反作业管理规定、造成重大社会不良影响的事件，将依法依规严肃处理并追究相关责任人和直接责任人的管理责任、教学责任。将通过各种平台，畅通反映问题和意见渠道，切实落实相关要求，确保学校作业管理工作取得实效。</span></span></p><p><span style="font-family:仿宋;font-size:10.5000pt;">&nbsp;</span></p><p><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">说明：本要求自</span>2021年9月开始实施。 </span></p><p style="text-align:right;"><span style="font-family:楷体;font-size:10.5000pt;"><span style="font-family:楷体;">2021年8月</span></span></p> 
+      </div>
+
+
+    </div>
+    <div style="clear:both"></div>
+
+    <!-- ---- 标签>>--【尾】 -- 标签开始 ---- -->
+    <div id="bom">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="cenetr">
+    <tr>
+      <td>
+        <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript     src='//dcs.conac.cn/js/02/029/0000/40201503/CA020290000402015030002.js' type='text/javascript'%3E%3C/script    %3E"));</script>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>
+        <p><span style="color:#ffffff;">All Rights Reserved Copyright 2006-2008 上海市闵行第三中学 版权所有 &nbsp; 地址：上海市闵行区华坪路110号</span></p>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+         <a target="_blank" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202006752" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="../../static/images/beian.png" style="float:left;">
+          <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;">
+            沪公网安备 31011202006752号
+          </p>
+        </a></td>
+    </tr>
+    <tr>
+      <td>
+        <div style="height: 10px;">
+          <p>
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+    <!-- ---- 标签>>--【尾】 -- 标签结束 ---- -->
+  </div>
+
+</body>
+
+</html>
